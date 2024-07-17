@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Bioinformatics, Genomics, Transcriptomics, Biochemistry, Biophysics
 
 profile:
   align: right

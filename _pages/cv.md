@@ -3,9 +3,9 @@ layout: cv
 permalink: /cv/
 title: cv
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+nav_order: 4
+cv_pdf: Boland_Devon_Curriculum_Vitae_2025.pdf
+description: My career broken down here is not always updated or comprehensive. Please download the most recent version of my CV by clicking the "PDF" button to the left.
 toc:
   sidebar: left
 ---

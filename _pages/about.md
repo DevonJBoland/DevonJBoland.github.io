@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Bioinformatics, Genomics, Transcriptomics, Biochemistry, Biophysics
+subtitle: Bioinformatics Tool Development & Multiomics/Multiplex Data Integration
 
 profile:
   align: right
@@ -13,7 +13,7 @@ profile:
     <p>206 Olsen Blvd</p>
     <p>College Station, Texas 77843</p>
 
-news: false # includes a list of news items, turned to false until set up later
+news: true # includes a list of news items, turned to false until set up later
 selected_papers: false # includes a list of papers marked as "selected={true}", turned to false until set up later
 social: false # includes social icons at the bottom of the page, turned to false until set up later
 ---

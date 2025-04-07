@@ -9,7 +9,7 @@ profile:
   image: boland_futurama.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Email: [devonjboland@tamu.edu](mailto:devonjboland@tamu.edu)</p>
+    <p>Email: <a href="mailto:devonjboland@tamu.edu">devonjboland@tamu.edu</a></p>
     <p>Phone: 979.458.5038</p>
     <p>Office: REYN 407A</p>
     <p>206 Olsen Blvd</p>

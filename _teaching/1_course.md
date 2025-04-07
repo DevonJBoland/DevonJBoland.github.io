@@ -42,5 +42,6 @@ inspect the quality of the data. Base quality scoring is calcuated as a Phred sc
 
 [Learn more about Phred scores and how they are calculated here](https://en.wikipedia.org/wiki/Phred_quality_score)
 
-Please download the following [data](_coursedata/week_1_reads.tar.gz) which we will use as
+Please download the following [data](https://drive.google.com/file/d/16fJ42CBaj0Ss-pEmpBVpV2ub0DsTP-_J/view?usp=sharing) which we will use as
 a practice dataset for trimming and mapping.
+

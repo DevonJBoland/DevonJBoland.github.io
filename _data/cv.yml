@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Devon J. Boland
+      value: Devon J. Boland, PhD
     - name: Date of Birth
       value: 24th February 1996
     - name: Languages
-      value: English, German
+      value: English
 
 - title: Education
   type: time_table

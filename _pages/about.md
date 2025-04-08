@@ -6,7 +6,7 @@ subtitle: Bioinformatics Tool Development & Multiomics/Multiplex Data Integratio
 
 profile:
   align: right
-  image: boland_futurama.jpg
+  image: Boland_Lab_Logo_v1.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Email: <a href="mailto:devonjboland@tamu.edu">devonjboland@tamu.edu</a></p>

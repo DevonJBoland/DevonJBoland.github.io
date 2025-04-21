@@ -43,7 +43,8 @@ inspect the quality of the data. Base quality scoring is calcuated as a Phred sc
 [Learn more about Phred scores and how they are calculated here](https://en.wikipedia.org/wiki/Phred_quality_score)
 
 Please download the following [data](https://drive.google.com/file/d/16fJ42CBaj0Ss-pEmpBVpV2ub0DsTP-_J/view?usp=sharing) which we will use as
-a practice dataset for trimming and mapping.
+a practice dataset for trimming and mapping. If you are struggling with remembering CLI tools and commands,
+visit the following [Github repo](https://github.com/RehanSaeed/Bash-Cheat-Sheet) that provides some nicely formatted cheat sheets for reference.
 
 
 ### Homework #1
@@ -60,9 +61,6 @@ Your job for the homework is to write a single job script \(.sh\) file that you 
 job script needs to be able to parse all your files in a single directory, perform trimming, and create a final HTML report for easy review.
 You will find the read data sets you need to analyze [here](https://drive.google.com/file/d/17DAsMYF7L9lKrYbcV8HhRIs0BmQksYZ_/view?usp=sharing) You will upload this assignment to Canvas under the module titled Week #1. 
 Email me [devonjboland@tamu.edu](mailto:devonjboland@tamu.edu) if you have any questions.
-
-####
-##
 
 ## Week 2: Read Mapping/Alignment
 
@@ -148,3 +146,82 @@ This single job script needs to be able to parse all your files in a single dire
 create a reference index, and map the trimmed reads to said reference. Lastly, you want to create a nice mapping 
 alignment graph using MultiQC as we did in class. You will upload this assignment to Canvas under the module titled Week #1
 Email me [devonjboland@tamu.edu](mailto:devonjboland@tamu.edu) if you have any questions.
+
+
+## Week 3: Quantification and Differential Expression
+
+This week we will finally move away from BASH/UNIX and using remote computational servers, and pulling all of our data locally,
+on machine, to perform all downstream analyses. For GENE 658, we will be using [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) to perform differnetial gene expression
+\(hereon referred to as DGE\). Before we can begin the analysis, we need to ensure we have the following software installed:
+
+ - [R](https://cran.r-project.org/), a computer langueage nearly all software we will use moving forward is coded in.
+ - [RStudio](https://posit.co/download/rstudio-desktop/), an R IDE \(read as Interactive Development Environment\).
+ - [Bioconductor](https://www.bioconductor.org/), a package repository/manager specializing in bioinformatics software.
+
+Follow the links in order to get everything installed. First, download and install the R programming language. Next,
+install RStudio. Once you have confirmed both R and RStudio have been installed properly, go ahead and open RStudio.
+We will go over how to use Bioconductor in class.
+
+RStudio is an R IDE. IDEs come in a lot of flavors, with various perks, but they all have the same underlying theme;
+a single application that can help you manage code, variables, functions, packages, debug, and the list goes on and on.
+We will not cover all of the various features and plugins availble in RStudio given the short length of this course. We
+will focus on one main feature of RStudio, and it is really an extension of the R programming language itself.
+
+When you installed R on your machine, it installed a plethora of files in your home or root directory. Most of these files
+are needed to simply allow R to function properly on your computer. Others are some new odds and ends that have been integrated
+into the R langueage since its original release. However many packages such as DESeq2, are not readily available. These have
+to be downloaded and installed from the internet. 
+
+In fact everytime, you need another R package, new tool, or even update and
+old one to a new version, you will R will run a check to ensure there are no conflicts between packages. This can be quite the
+tedious process and in some cases can be downright impossible depending on your hardware, and administrative level on your
+system.
+
+To avoid these issues, we are going to take advantage of something called the R Project manager. If you are at all familiar with
+**virtual environments** from the Python language, the R project manager is somewhat similiar. Basically, the R Project Manager
+\(`/renv`\), is a small piece of software that automatically manages depedencies, keeping files separate on a per project basis.
+This brings a whole slew of benefits such as: portability, version control, project sharing, *etc*. We want to use `/renv` to
+maintain our project files and environments so that we easily switch between projects. While we may not fully take advantage of
+this during the course, you should certainly take advantage of this in your research projects.
+
+Lastly, a couple of notes to go over about R and RStudio. In RStudio, a "project" can be thought of as simple as a single
+analysis \(such as DGE\) of a dataset, or as complex as an entire workflow dedicates to analyzing your RNA-seq project from
+exploratory data analysis, p-value calculations, pathway enrichment, visualization, and WGCNA. Suffice to say, this term
+can mean widly different things depedning on who you ask. For this course, we will treat a "project" as the folder that
+contains all files, data, and sub-directories related to performing a comprehensive analysis of your RNA-seq data. Another
+term is "session". You can think of session as all of the data stored in RAM during an analysis. The count matrix for all
+genes in your sample, the metadata for your samples, variance stabilized transformation of your gene counts, *etc*. All of
+these items are stored in your machine's RAM and are viewable in the upper right box of the RStudio IDE. In most cases
+you won't perform an entire project wide analysis in a single day. You may iterate over code, add new visualization,
+or use new packages. In any of these cases, it would be nice to pick up the analysis right from where you left it the day
+before. In order to do this, much like we would save a Word document we are drafting, we need to save the current state of
+all the data we have generated in RStudio. We do this by saving the "session" to a file ending in .RData. That way the next
+time we want to continue our analysis, or address a reviewer concern for an analysis we have in a manuscript in revision we
+can pick up right were we left off. We will go over examples of this in class, but make sure you utilize projects and sessions
+in RStudio.
+
+For most of today we are going to walk through the [DESeq2 Vignette](https://master.bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html). You will notice there are two main tutorials
+for RNA-seq analysis with DESeq2. The one I have linked above, is the older of the two, however I teach from it as I
+believe it does a better job defining terms and showing clear workflows of analysis without assuming to much prior
+knowledge.
+
+In the class and for the homework we will now use the count matrixes of RNA isolated from rat derived, arterial-lining smooth
+muscle cells. They can be downloaded [here](https://drive.google.com/drive/folders/1EoXmbJN3tFoF0GeS21ns0gCbhHSJDWkO?usp=sharing). This is a simple one **variable** test dataset, where the only difference between
+the samples in this case is age; either "old" or "young". We will ignore the quantification of these variables for the
+simplicity of class, however in practice this would likely be another variable to consider for mathematical modelling.
+
+Please follow along in class and ask any questions you may have.
+
+### Homework 3
+
+Your homework for week 3 will be to uplaod a single .R or .Rmarkdown file with your R code to analyze this RNA-seq data.
+Your R code should generate the following files:
+
+ - A volcano plot of Fold change, and p-values for each gene in the count matrix.
+ - A heatmap showing the counts for differentially expressed genes in all samples.
+ - A PCA plot of visuzlaing vairance captured in PC1 and PC2 of all samples.
+
+Please upload your homework to the [Canvas site](https://canvas.tamu.edu/courses/352642/modules/items/12483347).
+
+
+

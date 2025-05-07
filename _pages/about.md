@@ -29,22 +29,19 @@ After graduating with my Ph.D. in 2023, I joined the Bioinformatics Core within 
 Bioinformatics is a large interdisplinary field, and as such my research interests are wide-spread.
 
 ### Enablement of NGS-based Adventitious Agent Testing
-Adventitious Agent testing, is the the technique of assaying for contaminating agents \(e.g. bacteria, viruses, fungii\) that are unintentionally introduced 
-during the manufacturing of biotherapuetics and vaccines. While most agents are benign, some can be harmful and even deadly. AA testing has traditionally been performed by a combination of *in vitro* and *in vivo* assays. These long-standing techniques suffer from three major drawbacks:
+Adventitious agent \(AA\) testing is the process of detecting contaminating agents—such as bacteria, viruses, and fungi—that are unintentionally introduced during the manufacturing of biotherapeutics and vaccines. While many of these agents are harmless, others can be dangerous or even deadly. Traditionally, AA testing has relied on a combination of in vitro and in vivo assays, which suffer from three major limitations:
 
-1. Targeted \(these approaches require some *a priori* knowledge of the agents\)
-2. Require a large input of sample
-3. Low level of high-throughput
+ 1. They are targeted, requiring a priori knowledge of potential contaminants.
 
-Next-generation sequencing \(NGS\) is a global approach wherein multiple samples can be multiplexed for a single seuqencing run up to 600+ samples at a time,
-and needs only 100ng - 1ug of DNA/RNA as input for sequencing library preparation. NGS can overcome all three of these pitfalls incurred by traditional AA testing
-methods. Additionally, and NGS-based approach can even identify novel adventitiious agents, where traditional methods have historically failed.
+ 2. They require large sample inputs.
 
-My lab focuses on developing novel bioinformatics tools and approaches that enable the robust analysis of NGS data for rapid AA tesitng.
+ 3. They have low throughput.
+
+Next-generation sequencing \(NGS\) offers a powerful alternative. It enables multiplexing of hundreds of samples in a single sequencing run \(600+ in some cases\) and requires only 100 ng to 1 µg of DNA/RNA for library preparation. NGS addresses all the drawbacks of traditional AA testing and can even detect novel adventitious agents where conventional methods fall short.
+
+Our lab develops new bioinformatics tools and workflows that support robust and scalable NGS-based AA testing.
 
 ### Role of Eph Receptors in Host Immune Response to Pathogenic Infection
-Erythropoietin-producing human hepatocellular \(Eph\) receptors are the largest family of receptor tyrosine kinases. They bind to a wide range of Eph receptor
-interacting proteins called Ephrins. Their unique bi-directional signaling mechanism, along with their ubiqitous nature in mammals makes them a prime
-system to study such phenomena as cellular migration, development, angiogenesis, etc. Eph receptors are known to play vital roles in various diseases and disorders
-such as cancer and pathogenic infection. My lab focuses on understanding the role Eph receptors play in response to infection by *Mycobacterium tuberculosis*
-in human and murine models.
+Erythropoietin-producing human hepatocellular \(Eph\) receptors are the largest family of receptor tyrosine kinases. They interact with membrane-bound ligands called ephrins, and their unique bi-directional signaling—along with their ubiquitous expression in mammals—makes them a compelling system for studying cellular migration, development, angiogenesis, and more.
+
+Eph receptors are increasingly recognized for their roles in disease, including cancer and infectious diseases. Our lab focuses on elucidating the role of Eph receptors in the immune response to infection by *Mycobacterium tuberculosis*, using both human and murine model systems.

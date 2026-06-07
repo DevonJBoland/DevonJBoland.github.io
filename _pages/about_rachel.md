@@ -1,0 +1,1 @@
+My name is Rachel Passmore and I am a Genetics major at Texas A&M University. I have been interested in Genetics for a long time and what roles and aspects it can have in Society. 

@@ -2,7 +2,7 @@
   type: map
   contents:
     - name: Full Name
-      value: Devon J. Boland, PhD
+      value: Devon J. Boland, Ph.D.
     - name: Date of Birth
       value: 24th February 1996
     - name: Languages
@@ -11,50 +11,34 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Biochemistry & Molecular Biophyscis
-      institution: Texas A&M University, College Station, Texas, US
+    - title: Ph.D. in Biochemistry & Molecular Biophysics
+      institution: Texas A&M University, College Station, TX
       year: 2023
-      description:
-        - Test
-        - This Is
-        - title: smaller test
-          contents:
-            - where does this
-            - go?
-    - title: BS in Chemistry
-      institution: Northern Illinois University, DeKalb, Illinois, US
+    - title: B.S. in Chemistry/Biochemistry
+      institution: Northern Illinois University, Dekalb, IL
       year: 2018
-      description:
-        - this is.
-        - a test.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Certification in Bioinformatics & Computational Biology Instructor
-      institution: Graduate Program in Genetics & Genomics, Texas A&M University
-      year: 2024 - present
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Visiting Lecturer
+      institution: Department of Biochemistry & Biophysics, Texas A&M University
+      year: 2025 - present
     - title: Assistant Research Scientist
-      institution: Texas A&M Institute for Genome Sciences & Society (TIGSS), Texas A&M University
+      institution: TIGSS Bioinformatics Core, Texas A&M University
       year: 2023 - present
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Norman Borlaug Research Scholar
-      institution: Texas A&M University, College Station, Texas, US
-      year: 2021 - 2023
+    - title: Visiting Lecturer
+      institution: Genetics and Genomics Interdisciplinary Graduate Program, Texas A&M University
+      year: 2023 - present
+    - title: AgriLife Graduate Research Scholar
+      institution: Texas A&M University
+      year: 2022 - 2023
     - title: Graduate Teaching Assistant
-      institution: Department of Biochemistry & Biophysics, Texas A&M University, College Station, Texas, US
+      institution: Department of Biochemistry & Biophysics, Texas A&M University
       year: 2018 - 2023
-      description:
-        - Description 1.
+    - title: Undergraduate Research Assistant
+      institution: NIGMS R15, Northern Illinois University
+      year: 2017 - 2018
 
 - title: Honors and Awards
   type: time_table
@@ -65,11 +49,12 @@
     - year: 2023
       items:
         - 2nd Place Oral Presentation Award, Texas A&M University
-        - Norman Borlaug Endowed Research Scholar Fellowship, Texas A&M University
+    - year: 2022 - 2023
+      items:
+        - Norman Borlaug Endowed Research Scholar, Texas A&M University
     - year: 2022
       items:
-        - Norman Borlaug Endowed Research Scholar Fellowship, Texas A&M University
-        - 2nd Place Life Sciences Presentation, Texas A&M University
+        - 2nd Place Award Life Sciences Presentation, Texas A&M University
         - Paul Barry Gayle Teaching Award, Texas A&M University
     - year: 2017
       items:
@@ -78,28 +63,35 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: NGS-based Adventitious Agent Testing.
+    - title: Single-Cell Transcriptomics & Multi-Omic Integration
       items:
-        - Description 1.
-        - Description 2.
-    - title: Erythropoietin-producing human hepatocellular (Eph) receptors.
+        - Analysis of single-cell and single-nucleus RNA sequencing data.
+        - Integration with modalities such as ATAC-seq using Seurat, Scanpy, SAMap, and scVI workflows.
+    - title: AI-Driven Protein Structure Prediction
       items:
-        - Description 1.
-        - Description 2.
+        - Development and implementation of tools like AlphaFold2 and AlphaFold3 in university curricula.
+    - title: Biomedical Machine Learning & Pangenomics
+      items:
+        - Research utilizing knowledge graph architectures (Heterogeneous Graph Transformers, Retrieval-Augmented Generation).
+        - Genome assembly and visualization leveraging tools like ODGI and Cactus-minigraph.
 
 - title: Collaborations
   type: nested_list
   contents:
-    - title: Behavioral plasticity (polyphenism) in desert locusts.
+    - title: Erythropoietin-Producing Human Hepatocellular (Eph) Receptors
       items:
-        - Description 1.
-        - Description 2.
-    - title: Regenration mechanisms of regenerative-incomptent structures.
+        - Collaborative grant applications and bioinformatic analyses with partners at Baylor College of Medicine.
+    - title: Department of Microbial Pathogenesis & Immunology (MPIM) Initiatives
       items:
-        - Description 1.
-        - Description 2.
+        - Joint mentorship and research collaboration with Dr. Jeffrey Cirillo at Texas A&M University.
+    - title: Ovarian Fibrosis & Fibroblast Function
+      items:
+        - R01/R21 grant research investigating exposure to Cr(VI) and the fetal origin of ovarian fibrosis with Dr. Sakhila Banu.
+    - title: Behavioral Plasticity in Desert Locusts
+      items:
+        - Accelerating Behavioral Plasticity Research Through Scalable Interdisciplinary Team Science (BPRI 2.0) with Dr. Hojun Song.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> D&D, Photography, Hiking, Camping.
+    - <u>Hobbies:</u> D&D, Photography, Hiking, Camping

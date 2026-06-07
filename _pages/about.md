@@ -12,6 +12,7 @@ profile:
     <p>Email: <a href="mailto:devonjboland@tamu.edu">devonjboland@tamu.edu</a></p>
     <p>Phone: 979.458.5038</p>
     <p>Office: REYN 407A</p>
+    <p>Office: MREB II 3224B</p>
     <p>206 Olsen Blvd</p>
     <p>College Station, Texas 77843</p>
 

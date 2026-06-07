@@ -1,0 +1,1 @@
+Salvador Munoz IV is an undergraduate double majoring in genetics and molecular biology. He currently looks to service his hometown through the development of small projects to remedy the effects of industrial pollution. He aspires to pursue a phd/md, focusing on medical genetics research. He enjoys swimming, writing, and playing classical guitar.

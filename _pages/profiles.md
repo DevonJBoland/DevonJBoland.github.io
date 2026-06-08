@@ -35,4 +35,9 @@ profiles:
     image: /lab_members/undergrads/nile_pham.jpeg
     content: about_nile.md
     image_circular: true # crops the image to make it circular
+
+  - align: right
+    image: /lab_members/undergrads/bella_colunga.png
+    content: about_bella.md
+    image_circular: true # crops the image to make it circular
 ---

@@ -40,4 +40,9 @@ profiles:
     image: /lab_members/undergrads/bella_colunga.png
     content: about_bella.md
     image_circular: true # crops the image to make it circular
+  
+  - align: left
+    image: /lab_members/undergrads/sahithee.png
+    content: about_sahithee.md
+    image_circular: true # crops the image to make it circular
 ---

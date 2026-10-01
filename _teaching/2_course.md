@@ -3,7 +3,7 @@ layout: page
 title: Introduction to AlphaFold3
 description: 8th Annual Texas A&M Research Computing Symposium Workshop - Co-led with Dr. Michael Dickens 
 img: assets/img/teaching/AF_workshop.jpg
-importance: 2
+importance: 3
 category: current
 ---
 

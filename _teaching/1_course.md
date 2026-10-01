@@ -3,7 +3,7 @@ layout: page
 title: GENE 658
 description: Differential Expression Analysis
 img: assets/img/teaching/volcanoplot.png
-importance: 1
+importance: 2
 category: current
 ---
 

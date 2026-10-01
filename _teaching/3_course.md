@@ -11,4 +11,4 @@ category: current
 
 Welcome to the interactive materials for the SC3 ABRF R Workshop.
 
-<a href="/sc3-abrf-r-workshop/" class="btn btn-primary z-depth-0 mt-3">Launch the Interactive Workshop Book</a>
+<a href="/abrf-sc3-r-workshop/" class="btn btn-primary z-depth-0 mt-3">Launch the Interactive Workshop Book</a>
